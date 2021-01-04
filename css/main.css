@@ -733,6 +733,9 @@ p {
   max-width: var(--container-width);
   margin: 0 auto;
 }
+.main-layout main {
+  width: calc(100% - var(--aside-width));
+}
 .main-layout aside {
   min-width: var(--aside-width);
   text-decoration: none;
@@ -773,9 +776,6 @@ p {
   .main-layout aside {
     display: none;
   }
-}
-.main-layout main {
-  width: calc(100% - var(--aside-width));
 }
 @media screen and (max-width: 850px) {
   .main-layout {
@@ -1278,6 +1278,16 @@ p {
 }
 .products .product-items .product-item:hover .to-detail {
   display: block;
+}
+
+.recruitment main {
+  width: var(--container-width);
+  margin: 0 auto;
+}
+.recruitment main .job-detail .title > p {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-black);
 }
 
 /*# sourceMappingURL=main.css.map */

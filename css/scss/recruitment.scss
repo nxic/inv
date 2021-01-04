@@ -1,0 +1,21 @@
+.recruitment {
+  main {
+    width: var(--container-width);
+    margin: 0 auto;
+
+    .job-detail {
+      .title {
+        & > p {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--color-black);
+        }
+      }
+      .items {
+        .item {
+
+        }
+      }
+    }
+  }
+}

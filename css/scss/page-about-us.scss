@@ -1,0 +1,264 @@
+.page-about-us {
+  .header-image {
+    height: 400px;
+  }
+
+  .intro {
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius);
+    color: #fff;
+
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+
+  .statistics {
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+
+    .data {
+      font-size: 28px;
+      font-weight: 700 !important;
+    }
+
+    .content {
+      max-width: 200px;
+    }
+  }
+
+  .imaged-item {
+    min-width: 350px;
+
+    .imaged-item-image-wrapper {
+      border-radius: var(--border-radius);
+      background-color: #f9f9f9;
+      height: 83px;
+      width: 83px;
+    }
+  }
+  .mottos {
+    @media screen and (min-width: 1188px) {
+      .imaged-item {
+        max-width: 50%;
+      }
+    }
+  }
+
+  .history {
+    .dates {
+      overflow-x: auto;
+
+      .btn {
+        white-space: nowrap;
+        margin-right: 10px;
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .history-items {
+      .history-item {
+        &:first-of-type {
+          margin-top: 40px;
+        }
+        &:not(:last-of-type) {
+          margin-bottom: 30px;
+        }
+
+        & > p {
+          color: var(--color-black);
+          & > span {
+            font-weight: 700;
+          }
+        }
+
+        .history-item-body {
+          & > p {
+            color: var(--color-black);
+            font-weight: 600;
+          }
+          margin-left: 25px;
+          padding: 15px 15px 15px 32px;
+          background-color: #F9F9F9;
+          border-radius: var(--border-radius);
+        }
+      }
+    }
+  }
+
+  .human-resource {
+    .hr-image {
+      height: 400px;
+      width: auto;
+    }
+  }
+
+  .open-jobs-text {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .open-jobs-title {
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .open-jobs {
+    .open-jobs-items {
+      .open-jobs-type {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--color-black);
+      }
+      .open-jobs-item {
+        background-color: #F9F9F9;
+        width: 420px;
+        min-width: 420px;
+        max-height: 86px;
+
+        &:not(:last-of-type) {
+          margin-bottom: 10px;
+        }
+
+        .text {
+          margin-right: 17px;
+        }
+
+        .name {
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 600;
+          color: var(--color-black);
+        }
+
+        .date {
+          font-size: 14px;
+          font-weight: 600;
+          color: #6a777b;
+        }
+
+        .btn-detail {
+          background-color: #FDFDFD;
+          //background-color: green;
+          color: #626A70;
+          font-size: 14px;
+          font-weight: 400;
+          max-width: 144px;
+          height: 46px;
+        }
+      }
+    }
+  }
+
+  .job-competitive {
+    .job-competitive-items {
+      width: 100%;
+      .job-competitive-item {
+        &:nth-child(odd) {
+          padding-right: 30px;
+        }
+        // TODO: end responsive deer padding-g ni arilgax
+        max-width: 50%;
+
+        @media screen and (max-width: 1088px) {
+          max-width: 100%;
+          &:nth-child(odd) {
+            padding-right: 0;
+          }
+        }
+
+        .job-competitive-image {
+          width: 100%;
+          height: 228px;
+        }
+        .title {
+          color: var(--color-black);
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+        .text {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .interview-question {
+
+    .interview-question-types {
+      width: 100%;
+      border-top: 1px solid #dadada;
+      border-bottom: 1px solid #dadada;
+
+      .interview-question-item {
+        .interview-question-icon {
+          height: 32px;
+          width: 32px;
+          color: var(--color-primary);
+        }
+
+      }
+
+      .content {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  .employee-comment {
+    .employee-comment-items {
+      .employee-comment-item {
+        background-color: #f9f9f9;
+        min-height: 230px;
+
+        &:not(:last-of-type) {
+          margin-bottom: 10px;
+        }
+
+        .employee-comment-body {
+          &:before {
+            content: '';
+            // TODO: eniig xasax margin avaxguigeer shiidex
+            margin-left: -26px;
+            margin-bottom: -20px;
+            display: block;
+            background-image: url('./images/open-quote.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: var(--color-red);
+            width: 17px;
+            height: 22px;
+          }
+          text-align: left;
+
+          .name {
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--color-black);
+          }
+
+          .position {
+            color: var(--color-primary);
+          }
+
+          .comment {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--color-black);
+            opacity: 80%;
+          }
+        }
+
+        .employee-comment-image {
+          height: 150px;
+          width: 150px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}

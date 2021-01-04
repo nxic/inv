@@ -1,0 +1,8 @@
+{
+  "name": "invescore-mn",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "sass": "npx sass --watch css/scss/index.scss css/main.css"
+  }
+}

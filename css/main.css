@@ -1284,10 +1284,18 @@ p {
   width: var(--container-width);
   margin: 0 auto;
 }
-.recruitment main .job-detail .title > p {
+.recruitment main .job-detail .header {
+  padding: 8px 24px;
+}
+.recruitment main .job-detail .header .title {
   font-size: 16px;
   font-weight: 600;
   color: var(--color-black);
+}
+.recruitment main .job-detail .header .date {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6A777B;
 }
 
 /*# sourceMappingURL=main.css.map */

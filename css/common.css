@@ -28,6 +28,8 @@ button {
 .flex-4 { flex: 4 }
 .flex-5 { flex: 5 }
 
+.d-none { display: none; visibility: hidden; }
+
 .image {
   background-position: center;
   background-repeat: no-repeat;

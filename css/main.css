@@ -3,6 +3,7 @@
   --color-primary: #1F4E6A;
   --color-black: #0a1b25;
   --color-red: #C83732;
+  --color-body: #6A777B;
   --border-radius: 4px;
   --container-width: 1170px;
   --aside-width: 300px;
@@ -905,7 +906,7 @@ p {
 .page-about-us .open-jobs .open-jobs-items .open-jobs-item .date {
   font-size: 14px;
   font-weight: 600;
-  color: #6a777b;
+  color: var(--color-body);
 }
 .page-about-us .open-jobs .open-jobs-items .open-jobs-item .btn-detail {
   background-color: #FDFDFD;
@@ -1285,17 +1286,46 @@ p {
   margin: 0 auto;
 }
 .recruitment main .job-detail .header {
+  background: #FAFBFB;
   padding: 8px 24px;
 }
-.recruitment main .job-detail .header .title {
+.recruitment main .job-detail .header .job-title {
   font-size: 16px;
   font-weight: 600;
   color: var(--color-black);
 }
-.recruitment main .job-detail .header .date {
+.recruitment main .job-detail .header .due-date {
   font-size: 14px;
   font-weight: 600;
-  color: #6A777B;
+  color: var(--color-body);
+}
+.recruitment main .job-detail .items {
+  padding: 30px 0;
+}
+.recruitment main .job-detail .items .item {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #DFE6E6;
+  min-height: 200px;
+  padding: 24px 30px;
+}
+.recruitment main .job-detail .items .item:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.recruitment main .job-detail .items .item .title {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-black);
+  margin-bottom: 15px;
+}
+.recruitment main .job-detail .items .item .content {
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-body);
+}
+.recruitment main .job-detail .items .item .content:not(:last-of-type) {
+  padding-bottom: 12px;
 }
 
 /*# sourceMappingURL=main.css.map */
